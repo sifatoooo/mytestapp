@@ -43,7 +43,8 @@ module Rails3DeviseRspecCucumber
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    config.filter_parameters += [:password, :password_confirmation]
+	config.secret_token = '907e922ccb0a352d9cecd6632ba6d40588f10f8cad59955ede1c2ea4b57e328a8ba81cf099c1ac1aa9cab556c368169d8d66a5c7149d826200057f2f38570fdf'
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
